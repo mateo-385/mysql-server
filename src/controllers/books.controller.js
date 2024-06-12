@@ -1,5 +1,5 @@
 
-const { newConnection } = require('./db')
+const { newConnection } = require('../../db')
 
 //Obtener todos los libros
 const obtenerLibros = async (request, response) => {
@@ -48,5 +48,5 @@ const eliminarLibro = async (request, response) => {
 }
 
 module.exports = {
-    obtenerLibros, obtenerLibroId, actualizarLibro, eliminarLibro
+    obtenerLibros, obtenerLibroId, crearLibro, actualizarLibro, eliminarLibro
 }
